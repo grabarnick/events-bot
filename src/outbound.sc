@@ -1,7 +1,7 @@
 theme: /outbound
     
     state: newEvent
-        event: newEvent
+        event!: newEvent
         # intent!: /список
         a: Приглашаем вас на вебинар "Как сделать рассылки из бота".
         a: Дата: 24 мая, время: 12:00
@@ -9,8 +9,12 @@ theme: /outbound
         buttons: 
             "Купить билет" -> /BuyTicket
             "Узнать подробнее" -> ./eventInfo
+        script:
+            $analytics.setTextCampaignResult("Получили рассылку");
             
         state: eventInfo
             a: Мы расскажем вам, как создавать простые и интерактивные рассылки в VK, Telegram и WhatsApp.
             buttons: 
                 "Купить билет" -> /BuyTicket
+            script:
+                $analytics.setTextCampaignResult("Нажали Подробнее");
