@@ -1,14 +1,14 @@
 {
   "project" : {
-    "id" : "events_bot-1000004-ssP",
-    "name" : "events_bot-1000004-ssP",
+    "id" : "bot_meropriyatij-256760445-tjv",
+    "name" : "bot_meropriyatij-256760445-tjv",
     "folder" : "/jaicp"
   },
   "settings" : {
     "language" : "ru",
     "spellingCorrection" : false,
     "classificationAlgorithm" : "sts",
-    "timezone" : "Europe/Moscow",
+    "timezone" : "UTC",
     "extendedSettings" : {
       "tokenizerEngine" : "mystem",
       "useShared" : false
@@ -16,7 +16,27 @@
     "shared" : false
   },
   "intents" : [ {
-    "id" : 241,
+    "id" : 6780534,
+    "path" : "/возврат",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "как вернуть билет"
+    }, {
+      "text" : "возврат билета"
+    }, {
+      "text" : "возврат"
+    }, {
+      "text" : "когда вернуться деньги за билет"
+    }, {
+      "text" : "возврат средст"
+    }, {
+      "text" : "возврат денег"
+    } ],
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "id" : 6778777,
     "path" : "/пока",
     "enabled" : true,
     "shared" : false,
@@ -25,13 +45,60 @@
     } ],
     "priority" : 0
   }, {
-    "id" : 242,
+    "id" : 6778778,
     "path" : "/привет",
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
       "text" : "привет"
     } ],
+    "priority" : 0
+  }, {
+    "id" : 6779289,
+    "path" : "/цена",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "сколько стоит билет"
+    }, {
+      "text" : "почем билет"
+    }, {
+      "text" : "цена"
+    }, {
+      "text" : "сколько стоит"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ ],
+    "priority" : 0
+  }, {
+    "id" : 6779288,
+    "path" : "/купить",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "купить билет"
+    }, {
+      "text" : "купить"
+    } ],
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "id" : 6779488,
+    "path" : "/список",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "список мероприятий"
+    }, {
+      "text" : "мероприятия"
+    }, {
+      "text" : "актуальные"
+    }, {
+      "text" : "события"
+    }, {
+      "text" : "список событий"
+    } ],
+    "patterns" : [ ],
     "priority" : 0
   } ],
   "entities" : [ ],
