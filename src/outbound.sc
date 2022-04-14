@@ -22,8 +22,10 @@ theme: /outbound
     state: simpleText
         event!: simpleEvent
         # intent!: /список
-        a: Новый вебинар от компании Just AI - "Как сделать рассылки из бота".
-        a: Дата: 24 мая, время: 12:00
+        a: 
+            Новый вебинар от компании Just AI - "Как сделать рассылки из бота".
+            Дата: 24 мая, время: 12:00
+        image: https://just-ai.com/ru/wp-content/themes/justai_ru/img/func_2x2.png
         inlineButtons:
             {text:"Перейти на сайте", url:"https://just-ai.com"}
         
