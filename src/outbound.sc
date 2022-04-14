@@ -18,3 +18,12 @@ theme: /outbound
                 "Купить билет" -> /BuyTicket
             script:
                 $analytics.setTextCampaignResult("Нажали Подробнее");
+                
+    state: simpleText
+        event!: simpleEvent
+        # intent!: /список
+        a: Новый вебинар от компании Just AI - "Как сделать рассылки из бота".
+        a: Дата: 24 мая, время: 12:00
+        inlineButtons:
+            {text:"Перейти на сайте", url:"https://just-ai.com"}
+        
