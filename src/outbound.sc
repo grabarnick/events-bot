@@ -2,7 +2,6 @@ theme: /outbound
     
     state: newEvent
         event!: newEvent
-        # intent!: /список
         a: Приглашаем вас на вебинар "Как сделать рассылки из бота".
         a: Дата: 24 мая, время: 12:00
         a: Цена билета: 1200 руб.
@@ -31,7 +30,6 @@ theme: /outbound
                 
     state: simpleText
         event!: simpleEvent
-        # intent!: /список
         image: https://just-ai.com/ru/wp-content/themes/justai_ru/img/func_2x2.png
         a: Новый вебинар от компании Just AI - "Как сделать рассылки из бота". Дата: 24 мая, время: 12:00
         inlineButtons:
