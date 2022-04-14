@@ -1,7 +1,7 @@
 {
   "project" : {
-    "id" : "bot_meropriyatij-256760445-tjv",
-    "name" : "bot_meropriyatij-256760445-tjv",
+    "id" : "events_bot-1000004-ssP",
+    "name" : "events_bot-1000004-ssP",
     "folder" : "/jaicp"
   },
   "settings" : {
@@ -16,7 +16,7 @@
     "shared" : false
   },
   "intents" : [ {
-    "id" : 6780534,
+    "id" : 243,
     "path" : "/возврат",
     "enabled" : true,
     "shared" : false,
@@ -36,42 +36,7 @@
     "patterns" : [ ],
     "priority" : 0
   }, {
-    "id" : 6778777,
-    "path" : "/пока",
-    "enabled" : true,
-    "shared" : false,
-    "phrases" : [ {
-      "text" : "пока"
-    } ],
-    "priority" : 0
-  }, {
-    "id" : 6778778,
-    "path" : "/привет",
-    "enabled" : true,
-    "shared" : false,
-    "phrases" : [ {
-      "text" : "привет"
-    } ],
-    "priority" : 0
-  }, {
-    "id" : 6779289,
-    "path" : "/цена",
-    "enabled" : true,
-    "shared" : false,
-    "phrases" : [ {
-      "text" : "сколько стоит билет"
-    }, {
-      "text" : "почем билет"
-    }, {
-      "text" : "цена"
-    }, {
-      "text" : "сколько стоит"
-    } ],
-    "patterns" : [ ],
-    "slots" : [ ],
-    "priority" : 0
-  }, {
-    "id" : 6779288,
+    "id" : 247,
     "path" : "/купить",
     "enabled" : true,
     "shared" : false,
@@ -83,7 +48,25 @@
     "patterns" : [ ],
     "priority" : 0
   }, {
-    "id" : 6779488,
+    "id" : 244,
+    "path" : "/пока",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "пока"
+    } ],
+    "priority" : 0
+  }, {
+    "id" : 245,
+    "path" : "/привет",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "привет"
+    } ],
+    "priority" : 0
+  }, {
+    "id" : 248,
     "path" : "/список",
     "enabled" : true,
     "shared" : false,
@@ -99,6 +82,23 @@
       "text" : "список событий"
     } ],
     "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "id" : 246,
+    "path" : "/цена",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "сколько стоит билет"
+    }, {
+      "text" : "почем билет"
+    }, {
+      "text" : "цена"
+    }, {
+      "text" : "сколько стоит"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ ],
     "priority" : 0
   } ],
   "entities" : [ ],
