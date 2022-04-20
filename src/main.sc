@@ -4,7 +4,7 @@ theme: /
 
     state: Start
         q!: $regex</start>
-        a: Начнём.
+        a: Начнём. || htmlEnabled = true, html = "<b>Начнём</b>."
 
     # state: EventsList
     #     intent!: /список
@@ -44,4 +44,3 @@ theme: /
     state: NoMatch
         event!: noMatch
         a: Я не понял. Вы сказали: {{$request.query}}
-
