@@ -1,7 +1,7 @@
 theme: /outbound
     
-    state: newEvent
-        event!: newEvent
+    state: smartText
+        event!: smartText
         a: Приглашаем вас на вебинар "Как сделать рассылки из бота".
         a: Дата: 24 мая, время: 12:00
         a: Цена билета: 1200 руб.
