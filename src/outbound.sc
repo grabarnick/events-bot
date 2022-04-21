@@ -30,8 +30,8 @@ theme: /outbound
                 
     state: simpleText
         event!: simpleEvent
-        a: Новый вебинар от компании Just AI - "Как сделать рассылки из бота"
         image: https://news.itmo.ru/images/news/big/p9589.jpg
+        a: Новый вебинар от компании Just AI - "Как сделать рассылки из бота"
         inlineButtons:
             {text:"Перейти на сайте", url:"https://just-ai.com"}
         script:
