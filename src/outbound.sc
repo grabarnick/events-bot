@@ -34,4 +34,6 @@ theme: /outbound
         image: https://news.itmo.ru/images/news/big/p9589.jpg
         inlineButtons:
             {text:"Перейти на сайте", url:"https://just-ai.com"}
+        script:
+            $analytics.setTextCampaignResult("Получили рассылку");
         
