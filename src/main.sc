@@ -4,7 +4,7 @@ theme: /
 
     state: Start
         q!: $regex</start>
-        a: Начнём. || htmlEnabled = true, html = "<b>Начнём</b>."
+        a: Привет! Это бот мероприятий Just AI. Здесь вы можете узнать про наши новые события, купить билеты, получить разные скидки и бонусы!
 
     # state: EventsList
     #     intent!: /список
