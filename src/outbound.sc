@@ -2,14 +2,13 @@ theme: /outbound
     
     state: smartText
         event!: smartText
-        a: Приглашаем вас на вебинар "Как сделать рассылки из бота".
-        a: Дата: 24 мая, время: 12:00
-        a: Цена билета: 1200 руб.
+        image: https://just-ai.com/ru/wp-content/uploads/sites/3/2022/01/0295.jpg
+        a: Приглашаем вас на вебинар "Как сделать рассылки из бота". Дата: 24 мая, время: 12:00. Цена билета: 1200 руб.
         buttons: 
             "Купить билет" -> ./BuyTicket
             "Узнать подробнее" -> ./eventInfo
         script:
-            $analytics.setTextCampaignResult("Получили рассылку");
+            $analytics.setTextCampaignResult("Ничего не сделали");
             
         state: BuyTicket
             a: Для покупки билета введите вашу почту:
@@ -18,8 +17,9 @@ theme: /outbound
             state: Email
                 q: * $Email *
                 a: На вашу почту {{ $request.query }} будет отправлен билет на мероприятие.
-                
                 a: Если у вас есть вопросы, вы можете задать их здесь.
+                script:
+                    $analytics.setTextCampaignResult("Купили билет");
             
         state: eventInfo
             a: Мы расскажем вам, как создавать простые и интерактивные рассылки в VK, Telegram и WhatsApp.
