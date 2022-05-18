@@ -30,6 +30,9 @@ theme: /
     state: Ask
         intent!: /вопрос
         a: Напишите ваш вопрос:
+        go: Question
+        
+        state: Question
         q: *
         a: Спасибо за ваш вопрос ({{$request.query}})
         
