@@ -100,6 +100,20 @@
     "patterns" : [ ],
     "slots" : [ ],
     "priority" : 0
+  }, {
+    "id" : 9698793,
+    "path" : "/вопрос",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "вопрос спикеру"
+    }, {
+      "text" : "задать вопрос"
+    }, {
+      "text" : "как задать вопрос"
+    } ],
+    "patterns" : [ ],
+    "priority" : 0
   } ],
   "entities" : [ ],
   "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
