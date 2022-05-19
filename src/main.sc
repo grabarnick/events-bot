@@ -34,7 +34,7 @@ theme: /
         
         state: Question
             q: *
-            a: Спасибо за ваш вопрос ({{$request.query}})
+            a: Спасибо за ваш вопрос, мы передали его спикеру!
         
             
     state: TicketReturn

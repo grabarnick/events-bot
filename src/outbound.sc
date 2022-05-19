@@ -7,6 +7,7 @@ theme: /outbound
         buttons: 
             "Купить билет" -> ./BuyTicket
             "Узнать подробнее" -> ./eventInfo
+            "Задать вопрос спикеру" -> ./AskQ
         script:
             $analytics.setTextCampaignResult("Ничего не сделали");
             
@@ -27,6 +28,16 @@ theme: /outbound
                 "Купить билет" -> ./BuyTicket
             script:
                 $analytics.setTextCampaignResult("Нажали Подробнее");
+                
+        state: AskQ
+            a: Напишите ваш вопрос:
+            script:
+                $analytics.setTextCampaignResult("Задали вопрос");
+            go: getQ
+            
+            state: getQ
+                q: *
+                a: Спасибо за ваш вопрос, мы постараемся его задать!
                 
     state: simpleText
         event!: simpleEvent
