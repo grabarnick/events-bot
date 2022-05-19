@@ -38,6 +38,7 @@ theme: /outbound
             state: getQ
                 q: *
                 a: Спасибо за ваш вопрос, мы постараемся его задать!
+                image: /src/text-campaign.png
                 
     state: simpleText
         event!: simpleEvent
