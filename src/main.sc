@@ -33,8 +33,8 @@ theme: /
         go: Question
         
         state: Question
-        q: *
-        a: Спасибо за ваш вопрос ({{$request.query}})
+            q: *
+            a: Спасибо за ваш вопрос ({{$request.query}})
         
             
     state: TicketReturn
