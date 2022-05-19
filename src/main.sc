@@ -34,6 +34,7 @@ theme: /
         
         state: Question
             q: *
+            image: https://248305.selcdn.ru/zfl_prod/256760445/256760444/GBalc4BxgLY3Vazx.png
             a: Спасибо за ваш вопрос, мы передали его спикеру!
         
             

@@ -2,7 +2,7 @@ theme: /outbound
     
     state: smartText
         event!: smartEvent
-        image: /src/text-campaign.png
+        image: https://248305.selcdn.ru/zfl_prod/256760445/256760444/GBalc4BxgLY3Vazx.png
         a: Приглашаем вас на вебинар "Как сделать рассылки из бота". Дата: 24 мая, время: 12:00. Цена билета: 1200 руб.
         buttons: 
             "Купить билет" -> ./BuyTicket
@@ -37,7 +37,6 @@ theme: /outbound
             
             state: getQ
                 q: *
-                image: /src/text-campaign.png
                 a: Спасибо за ваш вопрос, мы постараемся его задать!
                 
                 
