@@ -2,7 +2,7 @@ theme: /outbound
     
     state: smartText
         event!: smartEvent
-        image: https://just-ai.com/ru/wp-content/uploads/sites/3/2022/01/0295.jpg
+        image: /src/text-campaign.png
         a: Приглашаем вас на вебинар "Как сделать рассылки из бота". Дата: 24 мая, время: 12:00. Цена билета: 1200 руб.
         buttons: 
             "Купить билет" -> ./BuyTicket
