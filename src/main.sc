@@ -34,7 +34,6 @@ theme: /
         
         state: Question
             q: *
-            image: /src/text-campaign.png
             a: Спасибо за ваш вопрос, мы передали его спикеру!
         
             
