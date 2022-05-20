@@ -6,27 +6,10 @@ theme: /
         q!: $regex</start>
         a: Привет! Это бот мероприятий Just AI. Здесь вы можете узнать про наши новые события, купить билеты, получить разные скидки и бонусы!
 
-    # state: EventsList
-    #     intent!: /список
-    #     script:
-    #         var eventsList = getEventsList();
-    #         for (var i = 0; i < eventsList.length; i++) {
-    #         }
-            
     state: Bye
         intent!: /пока
         a: Пока пока
         
-    # state: BuyTicket
-    #     a: Для покупки билета введите вашу почту:
-    #     go: Email
-        
-    #     state: Email
-    #         q: * $Email *
-    #         a: На вашу почту {{ $request.query }} будет отправлен билет на мероприятие.
-            
-    #         a: Если у вас есть вопросы, вы можете задать их здесь.
-
     state: Ask
         intent!: /вопрос
         a: Напишите ваш вопрос:
@@ -48,7 +31,15 @@ theme: /
             a: Возврат оформлен, ожидайте возврата средств.
             a: Если у вас есть другие вопросы, вы можете задать их здесь.
     
-    state: MyTickets
+    state: NewEvent
+        event!: newEvent
+        a: 24 мая состоится вебинар, посвященный рассыкам в ботах от Just AI.
+        buttons:
+            "Узнать подробнее"
+        
+        state: moreInfo
+            q: Узнать подробнее
+            a: Подробная информация
         
 
     state: NoMatch
