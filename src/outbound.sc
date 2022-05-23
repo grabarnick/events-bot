@@ -22,8 +22,8 @@ theme: /outbound
             image: https://just-ai.com/ru/wp-content/themes/justai_ru/img/outgoing-mailings-statistics.png
             a: Новый сервис интерактивных исходящих рассылок в мессенджерах и соцсетях. Отправляйте сообщения о промоакциях, услугах и товарах, статусе заказов и доставки через чат-бота и начинайте диалог с клиентом прямо в рассылке!
             buttons: 
-                "Купить билет" -> ./smartText
-                "Задать вопрос спикеру" -> ./smartText
+                "Купить билет"
+                "Задать вопрос спикеру"
             script:
                 $analytics.setTextCampaignResult("Нажали Подробнее");
                 
@@ -38,8 +38,8 @@ theme: /outbound
                 q: *
                 a: Спасибо за ваш вопрос, мы постараемся его задать!
                 buttons: 
-                    "Купить билет" -> ././smartText
-                    "Узнать подробнее" -> ././smartText
+                    "Купить билет"
+                    "Узнать подробнее"
                 
                 
     state: simpleText
