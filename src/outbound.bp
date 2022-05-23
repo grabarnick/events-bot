@@ -1,0 +1,19 @@
+{
+  "positions" : [ {
+    "id" : "/outbound/smartText",
+    "x" : -354,
+    "y" : 4
+  }, {
+    "id" : "/outbound/smartText/AskQ",
+    "x" : 771,
+    "y" : 206
+  }, {
+    "id" : "/outbound/smartText/eventInfo",
+    "x" : -1,
+    "y" : 179
+  }, {
+    "id" : "/outbound/simpleText",
+    "x" : 415,
+    "y" : 522
+  } ]
+}
