@@ -4,6 +4,7 @@ theme: /
 
     state: Start
         q!: $regex</start>
+        image: https://just-ai.com/ru/wp-content/uploads/sites/3/2021/12/main_page_news_3.png
         a: Привет! Это бот мероприятий Just AI. Здесь вы можете узнать про наши новые события, купить билеты, получить разные скидки и бонусы!
 
     state: Bye
