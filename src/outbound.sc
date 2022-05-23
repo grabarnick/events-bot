@@ -5,6 +5,7 @@ theme: /outbound
         a: 
             
         state: BuyTicket
+            q: Купить билет
             a: Для покупки билета введите вашу почту:
             go: Email
         
@@ -16,6 +17,7 @@ theme: /outbound
                     $analytics.setTextCampaignResult("Купили билет");
             
         state: eventInfo
+            q: Узнать подробнее
             a: Тема вебинара: "Создаем интерактивные рассылки в чат-ботах на платформе JAICP"
             image: https://just-ai.com/ru/wp-content/themes/justai_ru/img/outgoing-mailings-statistics.png
             a: Новый сервис интерактивных исходящих рассылок в мессенджерах и соцсетях. Отправляйте сообщения о промоакциях, услугах и товарах, статусе заказов и доставки через чат-бота и начинайте диалог с клиентом прямо в рассылке!
@@ -26,6 +28,7 @@ theme: /outbound
                 $analytics.setTextCampaignResult("Нажали Подробнее");
                 
         state: AskQ
+            q: Задать вопрос спикеру
             a: Напишите ваш вопрос:
             script:
                 $analytics.setTextCampaignResult("Задали вопрос");
