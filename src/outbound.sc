@@ -7,7 +7,6 @@ theme: /outbound
         state: BuyTicket
             q: Купить билет
             a: Для покупки билета введите вашу почту:
-            go: Email
         
             state: Email
                 q: * $Email *
@@ -15,6 +14,10 @@ theme: /outbound
                 a: Если у вас есть вопросы, вы можете задать их здесь.
                 script:
                     $analytics.setTextCampaignResult("Купили билет");
+                    
+            state: EmailNoMatch
+                event: noMatch
+                a: Вы ввели неверный email-адреc, попробуйте еще раз.
             
         state: eventInfo
             q: Узнать подробнее
