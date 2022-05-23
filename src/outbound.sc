@@ -2,7 +2,7 @@ theme: /outbound
     
     state: smartText
         event!: smartEvent
-        a: 
+        a: xxx
         buttons: 
             "Купить билет" -> ./BuyTicket
             "Узнать подробнее" -> ./eventInfo
