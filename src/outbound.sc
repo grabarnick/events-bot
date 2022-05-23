@@ -2,14 +2,7 @@ theme: /outbound
     
     state: smartText
         event!: smartEvent
-        image: https://just-ai.com/ru/wp-content/uploads/sites/3/2021/12/main_page_news_3.png
-        a: Приглашаем вас на вебинар "Как сделать рассылки из бота". Дата: 24 мая, время: 12:00. Цена билета: 1200 руб.
-        buttons: 
-            "Купить билет" -> ./BuyTicket
-            "Узнать подробнее" -> ./eventInfo
-            "Задать вопрос спикеру" -> ./AskQ
-        script:
-            $analytics.setTextCampaignResult("Ничего не сделали");
+        a: 
             
         state: BuyTicket
             a: Для покупки билета введите вашу почту:
@@ -23,9 +16,12 @@ theme: /outbound
                     $analytics.setTextCampaignResult("Купили билет");
             
         state: eventInfo
-            a: Мы расскажем вам, как создавать простые и интерактивные рассылки в VK, Telegram и WhatsApp.
+            a: Тема вебинара: "Создаем интерактивные рассылки в чат-ботах на платформе JAICP"
+            image: https://just-ai.com/ru/wp-content/themes/justai_ru/img/outgoing-mailings-statistics.png
+            a: Новый сервис интерактивных исходящих рассылок в мессенджерах и соцсетях. Отправляйте сообщения о промоакциях, услугах и товарах, статусе заказов и доставки через чат-бота и начинайте диалог с клиентом прямо в рассылке!
             buttons: 
                 "Купить билет" -> ./BuyTicket
+                "Задать вопрос спикеру" -> ./AskQ
             script:
                 $analytics.setTextCampaignResult("Нажали Подробнее");
                 
@@ -38,6 +34,9 @@ theme: /outbound
             state: getQ
                 q: *
                 a: Спасибо за ваш вопрос, мы постараемся его задать!
+                buttons: 
+                    "Купить билет" -> ././BuyTicket
+                    "Узнать подробнее" -> ././eventInfo
                 
                 
     state: simpleText
@@ -46,6 +45,4 @@ theme: /outbound
         a: Новый вебинар от компании Just AI - "Как сделать рассылки из бота"
         inlineButtons:
             {text:"Перейти на сайте", url:"https://just-ai.com"}
-        script:
-            $analytics.setTextCampaignResult("Получили рассылку");
         
