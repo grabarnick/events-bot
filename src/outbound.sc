@@ -14,6 +14,7 @@ theme: /outbound
                 a: Если у вас есть вопросы, вы можете задать их здесь.
                 script:
                     $analytics.setTextCampaignResult("Купили билет");
+                go: /Start
                     
             state: EmailNoMatch
                 event: noMatch
