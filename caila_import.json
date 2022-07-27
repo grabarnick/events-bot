@@ -1,7 +1,7 @@
 {
   "project" : {
-    "id" : "bot_meropriyatij-1000003-uLe",
-    "name" : "bot_meropriyatij-1000003-uLe",
+    "id" : "bot_meropriyatij_ras-256760445-OIX",
+    "name" : "bot_meropriyatij_ras-256760445-OIX",
     "folder" : "/jaicp"
   },
   "settings" : {
@@ -16,7 +16,22 @@
     "shared" : false
   },
   "intents" : [ {
-    "id" : 129,
+    "id" : 9856099,
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ",
+    "enabled" : true,
+    "shared" : false,
+    "priority" : 0
+  }, {
+    "id" : 9856101,
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Новый вопрос",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Новый вопрос"
+    } ],
+    "priority" : 0
+  }, {
+    "id" : 9707719,
     "path" : "/возврат",
     "enabled" : true,
     "shared" : false,
@@ -36,21 +51,7 @@
     "patterns" : [ ],
     "priority" : 0
   }, {
-    "id" : 135,
-    "path" : "/вопрос",
-    "enabled" : true,
-    "shared" : false,
-    "phrases" : [ {
-      "text" : "вопрос спикеру"
-    }, {
-      "text" : "задать вопрос"
-    }, {
-      "text" : "как задать вопрос"
-    } ],
-    "patterns" : [ ],
-    "priority" : 0
-  }, {
-    "id" : 130,
+    "id" : 9707720,
     "path" : "/купить",
     "enabled" : true,
     "shared" : false,
@@ -62,7 +63,7 @@
     "patterns" : [ ],
     "priority" : 0
   }, {
-    "id" : 131,
+    "id" : 9707721,
     "path" : "/пока",
     "enabled" : true,
     "shared" : false,
@@ -71,7 +72,7 @@
     } ],
     "priority" : 0
   }, {
-    "id" : 132,
+    "id" : 9707722,
     "path" : "/привет",
     "enabled" : true,
     "shared" : false,
@@ -80,7 +81,7 @@
     } ],
     "priority" : 0
   }, {
-    "id" : 133,
+    "id" : 9707723,
     "path" : "/список",
     "enabled" : true,
     "shared" : false,
@@ -98,7 +99,7 @@
     "patterns" : [ ],
     "priority" : 0
   }, {
-    "id" : 134,
+    "id" : 9707724,
     "path" : "/цена",
     "enabled" : true,
     "shared" : false,
@@ -113,6 +114,64 @@
     } ],
     "patterns" : [ ],
     "slots" : [ ],
+    "priority" : 0
+  }, {
+    "id" : 9707725,
+    "path" : "/вопрос",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "вопрос спикеру"
+    }, {
+      "text" : "задать вопрос"
+    }, {
+      "text" : "как задать вопрос"
+    } ],
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "id" : 10660786,
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Новая группа",
+    "enabled" : true,
+    "shared" : false,
+    "priority" : 0
+  }, {
+    "id" : 10660788,
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Новая группа 2",
+    "enabled" : true,
+    "shared" : false,
+    "priority" : 0
+  }, {
+    "id" : 10660789,
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Новая группа 3",
+    "enabled" : true,
+    "shared" : false,
+    "priority" : 0
+  }, {
+    "id" : 10660790,
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Новая группа 4",
+    "enabled" : true,
+    "shared" : false,
+    "priority" : 0
+  }, {
+    "id" : 10660784,
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Новая группа 4/Новый вопрос 2",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Новый вопрос 2"
+    } ],
+    "priority" : 0
+  }, {
+    "id" : 10660787,
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Новая группа 4/Новый вопрос 3",
+    "answer" : "ываываыываываы",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Новый вопрос 3"
+    } ],
+    "patterns" : [ ],
     "priority" : 0
   } ],
   "entities" : [ ],

@@ -2,11 +2,18 @@ theme: /outbound
     
     state: smartText
         event!: smartEvent
-        a: 
+        image: https://248305.selcdn.ru/zfl_prod/256760445/256760444/GBalc4BxgLY3Vazx.png
+        a: Приглашаем вас на вебинар "Как сделать рассылки из бота". Дата: 24 мая, время: 12:00. Цена билета: 1200 руб.
+        buttons: 
+            "Купить билет" -> ./BuyTicket
+            "Узнать подробнее" -> ./eventInfo
+            "Задать вопрос спикеру" -> ./AskQ
+        script:
+            $analytics.setTextCampaignResult("Ничего не сделали");
             
         state: BuyTicket
-            q: Купить билет
             a: Для покупки билета введите вашу почту:
+            go: Email
         
             state: Email
                 q: * $Email *
@@ -14,25 +21,15 @@ theme: /outbound
                 a: Если у вас есть вопросы, вы можете задать их здесь.
                 script:
                     $analytics.setTextCampaignResult("Купили билет");
-                go: /Start
-                    
-            state: EmailNoMatch
-                event: noMatch
-                a: Вы ввели неверный email-адреc, попробуйте еще раз.
             
         state: eventInfo
-            q: Узнать подробнее
-            a: Тема вебинара: "Создаем интерактивные рассылки в чат-ботах на платформе JAICP"
-            image: https://just-ai.com/ru/wp-content/themes/justai_ru/img/outgoing-mailings-statistics.png
-            a: Новый сервис интерактивных исходящих рассылок в мессенджерах и соцсетях. Отправляйте сообщения о промоакциях, услугах и товарах, статусе заказов и доставки через чат-бота и начинайте диалог с клиентом прямо в рассылке!
+            a: Мы расскажем вам, как создавать простые и интерактивные рассылки в VK, Telegram и WhatsApp.
             buttons: 
-                "Купить билет"
-                "Задать вопрос спикеру"
+                "Купить билет" -> ./BuyTicket
             script:
                 $analytics.setTextCampaignResult("Нажали Подробнее");
                 
         state: AskQ
-            q: Задать вопрос спикеру
             a: Напишите ваш вопрос:
             script:
                 $analytics.setTextCampaignResult("Задали вопрос");
@@ -41,9 +38,6 @@ theme: /outbound
             state: getQ
                 q: *
                 a: Спасибо за ваш вопрос, мы постараемся его задать!
-                buttons: 
-                    "Купить билет"
-                    "Узнать подробнее"
                 
                 
     state: simpleText
@@ -52,4 +46,6 @@ theme: /outbound
         a: Новый вебинар от компании Just AI - "Как сделать рассылки из бота"
         inlineButtons:
             {text:"Перейти на сайте", url:"https://just-ai.com"}
+        script:
+            $analytics.setTextCampaignResult("Получили рассылку");
         

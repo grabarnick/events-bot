@@ -4,4 +4,6 @@ require: slotfilling/slotFilling.sc
 require: email/email.sc
     module = sys.zfl-common
 
+require: scripts.js
+
 require: outbound.sc
