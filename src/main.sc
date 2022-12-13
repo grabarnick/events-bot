@@ -6,11 +6,13 @@ theme: /
         q!: $regex</start>
         a: Привет! Это бот мероприятий Just AI. Здесь вы можете узнать про наши новые события, купить билеты, получить разные скидки и бонусы!
         script:
-            $analytics.setSessionData("Колонка", "Значение")
+            $analytics.setSessionData("Канал", "Виджет")
 
     state: Bye
         intent!: /пока
         a: Пока пока
+        script:
+            $analytics.setSessionData("Источник", "Google")
         
     state: Ask
         intent!: /вопрос
